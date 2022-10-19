@@ -1,6 +1,10 @@
 // ============================================================================
 //                              VI SEnC 2022
 // ============================================================================
+// 
+// File:    DE2_115_top
+// 
+// ============================================================================
 
 module DE2_115_nios_top(
 
@@ -174,24 +178,24 @@ module DE2_115_nios_top(
     //////// GPIO //////////
     GPIO,
 
-    //////// HSMC (LVDS) //////////
-//    HSMC_CLKIN_N1,
-//    HSMC_CLKIN_N2,
-    HSMC_CLKIN_P1,
-    HSMC_CLKIN_P2,
-    HSMC_CLKIN0,
-//    HSMC_CLKOUT_N1,
-//    HSMC_CLKOUT_N2,
-    HSMC_CLKOUT_P1,
-    HSMC_CLKOUT_P2,
-    HSMC_CLKOUT0,
-    HSMC_D,
-//    HSMC_RX_D_N,
-    HSMC_RX_D_P,
-//    HSMC_TX_D_N,
-    HSMC_TX_D_P,
-    //////// EXTEND IO //////////
-    EX_IO    
+//    //////// HSMC (LVDS) //////////
+////    HSMC_CLKIN_N1,
+////    HSMC_CLKIN_N2,
+//    HSMC_CLKIN_P1,
+//    HSMC_CLKIN_P2,
+//    HSMC_CLKIN0,
+////    HSMC_CLKOUT_N1,
+////    HSMC_CLKOUT_N2,
+//    HSMC_CLKOUT_P1,
+//    HSMC_CLKOUT_P2,
+//    HSMC_CLKOUT0,
+//    HSMC_D,
+////    HSMC_RX_D_N,
+//    HSMC_RX_D_P,
+////    HSMC_TX_D_N,
+//    HSMC_TX_D_P,
+//    //////// EXTEND IO //////////
+//    EX_IO    
 );
 
 //=======================================================
@@ -377,24 +381,31 @@ inout          [35:0]    GPIO;
 
 //////////// HSMC (LVDS) //////////
 
-//input                  HSMC_CLKIN_N1;
-//input                  HSMC_CLKIN_N2;
-input                    HSMC_CLKIN_P1;
-input                    HSMC_CLKIN_P2;
-input                    HSMC_CLKIN0;
-//output                  HSMC_CLKOUT_N1;
-//output                  HSMC_CLKOUT_N2;
-output                   HSMC_CLKOUT_P1;
-output                   HSMC_CLKOUT_P2;
-output                   HSMC_CLKOUT0;
-inout          [3:0]     HSMC_D;
-//input          [16:0]    HSMC_RX_D_N;
-input          [16:0]    HSMC_RX_D_P;
-//output         [16:0]    HSMC_TX_D_N;
-output         [16:0]    HSMC_TX_D_P;
+////input                  HSMC_CLKIN_N1;
+////input                  HSMC_CLKIN_N2;
+//input                    HSMC_CLKIN_P1;
+//input                    HSMC_CLKIN_P2;
+//input                    HSMC_CLKIN0;
+////output                  HSMC_CLKOUT_N1;
+////output                  HSMC_CLKOUT_N2;
+//output                   HSMC_CLKOUT_P1;
+//output                   HSMC_CLKOUT_P2;
+//output                   HSMC_CLKOUT0;
+//inout          [3:0]     HSMC_D;
+////input          [16:0]    HSMC_RX_D_N;
+//input          [16:0]    HSMC_RX_D_P;
+////output         [16:0]    HSMC_TX_D_N;
+//output         [16:0]    HSMC_TX_D_P;
 
-//////// EXTEND IO //////////
-inout          [6:0]     EX_IO;
+////////// EXTEND IO //////////
+//inout          [6:0]     EX_IO;
 
+
+    nios_processor u0 (
+        .clk_clk         (CLOCK_50),
+        .leds_export     (LEDR[7:0]),
+        .reset_reset_n   (KEY[0]),
+        .switches_export (SW[7:0])
+    );
 
 endmodule
