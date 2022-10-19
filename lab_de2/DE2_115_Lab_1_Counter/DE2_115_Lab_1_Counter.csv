@@ -1,0 +1,54 @@
+# Copyright (C) 2022  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+
+# Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+# File: /home/gpaulino/training_fpga/lab_practices/DE2_115_Lab_1_Counter/DE2_115_Lab_1_Counter.csv
+# Generated on: Wed Oct 12 21:50:13 2022
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+CLOCK_50,Input,PIN_Y2,2,B2_N0,PIN_Y2,3.3-V LVTTL,,,,,
+KEY[3],Input,PIN_R24,5,B5_N0,PIN_R24,2.5 V,,,,,
+KEY[2],Input,PIN_N21,6,B6_N2,PIN_N21,2.5 V,,,,,
+KEY[1],Input,PIN_M21,6,B6_N1,PIN_M21,2.5 V,,,,,
+KEY[0],Input,PIN_M23,6,B6_N2,PIN_M23,2.5 V,,,,,
+LEDG[8],Output,PIN_F17,7,B7_N2,PIN_F17,2.5 V,,,,,
+LEDG[7],Output,PIN_G21,7,B7_N1,PIN_G21,2.5 V,,,,,
+LEDG[6],Output,PIN_G22,7,B7_N2,PIN_G22,2.5 V,,,,,
+LEDG[5],Output,PIN_G20,7,B7_N1,PIN_G20,2.5 V,,,,,
+LEDG[4],Output,PIN_H21,7,B7_N2,PIN_H21,2.5 V,,,,,
+LEDG[3],Output,PIN_E24,7,B7_N1,PIN_E24,2.5 V,,,,,
+LEDG[2],Output,PIN_E25,7,B7_N1,PIN_E25,2.5 V,,,,,
+LEDG[1],Output,PIN_E22,7,B7_N0,PIN_E22,2.5 V,,,,,
+LEDG[0],Output,PIN_E21,7,B7_N0,PIN_E21,2.5 V,,,,,
+LEDR[17],Output,PIN_H15,7,B7_N2,PIN_H15,2.5 V,,,,,
+LEDR[16],Output,PIN_G16,7,B7_N2,PIN_G16,2.5 V,,,,,
+LEDR[15],Output,PIN_G15,7,B7_N2,PIN_G15,2.5 V,,,,,
+LEDR[14],Output,PIN_F15,7,B7_N2,PIN_F15,2.5 V,,,,,
+LEDR[13],Output,PIN_H17,7,B7_N2,PIN_H17,2.5 V,,,,,
+LEDR[12],Output,PIN_J16,7,B7_N2,PIN_J16,2.5 V,,,,,
+LEDR[11],Output,PIN_H16,7,B7_N2,PIN_H16,2.5 V,,,,,
+LEDR[10],Output,PIN_J15,7,B7_N2,PIN_J15,2.5 V,,,,,
+LEDR[9],Output,PIN_G17,7,B7_N1,PIN_G17,2.5 V,,,,,
+LEDR[8],Output,PIN_J17,7,B7_N2,PIN_J17,2.5 V,,,,,
+LEDR[7],Output,PIN_H19,7,B7_N2,PIN_H19,2.5 V,,,,,
+LEDR[6],Output,PIN_J19,7,B7_N2,PIN_J19,2.5 V,,,,,
+LEDR[5],Output,PIN_E18,7,B7_N1,PIN_E18,2.5 V,,,,,
+LEDR[4],Output,PIN_F18,7,B7_N1,PIN_F18,2.5 V,,,,,
+LEDR[3],Output,PIN_F21,7,B7_N0,PIN_F21,2.5 V,,,,,
+LEDR[2],Output,PIN_E19,7,B7_N0,PIN_E19,2.5 V,,,,,
+LEDR[1],Output,PIN_F19,7,B7_N0,PIN_F19,2.5 V,,,,,
+LEDR[0],Output,PIN_G19,7,B7_N2,PIN_G19,2.5 V,,,,,
