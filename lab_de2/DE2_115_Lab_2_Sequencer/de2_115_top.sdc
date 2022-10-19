@@ -52,8 +52,10 @@ derive_clock_uncertainty
 #**************************************************************
 # Set False Path
 #**************************************************************
-
-
+set_false_path -from [get_ports {KEY[0]}]
+set_false_path -from [get_ports {KEY[1]}]
+set_false_path -from [get_ports {KEY[2]}]
+set_false_path -from [get_ports {KEY[3]}]
 
 #**************************************************************
 # Set Multicycle Path
