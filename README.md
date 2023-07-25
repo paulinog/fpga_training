@@ -15,3 +15,6 @@ Este é um treinamento sobre FPGA Design, nos seguintes tópicos:
 - Simulação de lógica e ferramentas de debugging
 - Prática de laboratório 3 - processadores softcore
 
+---
+Veja nesta outra branch as soluções para as práticas de laboratório:
+https://github.com/paulinog/fpga_training/tree/solutions
