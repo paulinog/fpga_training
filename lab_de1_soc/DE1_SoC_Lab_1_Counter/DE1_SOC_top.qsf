@@ -7,7 +7,7 @@ set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY "DE1_SOC_top"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13"
-set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "Thu Jul 11 11:26:45 2013"
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 
@@ -386,7 +386,6 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to IRDA_TXD
 #============================================================
 # KEY
 #============================================================
-set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[2]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[3]
@@ -657,7 +656,6 @@ set_location_assignment PIN_AA25 -to HEX5[6]
 
 set_location_assignment PIN_AA30 -to IRDA_RXD
 set_location_assignment PIN_AB30 -to IRDA_TXD
-set_location_assignment PIN_AA14 -to KEY[0]
 set_location_assignment PIN_AA15 -to KEY[1]
 set_location_assignment PIN_W15 -to KEY[2]
 set_location_assignment PIN_Y16 -to KEY[3]
@@ -738,5 +736,12 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE LED_Controller.v
+set_global_assignment -name VERILOG_FILE DE1_SOC_top.v
 set_global_assignment -name SDC_FILE DE1_SOC_top.sdc
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY_0
+set_location_assignment PIN_AA14 -to KEY_0
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
