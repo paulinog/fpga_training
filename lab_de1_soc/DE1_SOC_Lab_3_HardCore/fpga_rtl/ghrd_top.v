@@ -212,11 +212,15 @@ module ghrd_top(
   wire [27:0] stm_hw_events;
 
 // connection of internal logics
+//  assign LEDR = fpga_led_internal;
   assign stm_hw_events    = {{3{1'b0}},SW, fpga_led_internal, fpga_debounced_buttons};
 
 
 
     soc_system u0 (
+
+        .pio_led_external_connection_export    (LEDR),     // pio_led_external_connection.export
+	 	 
         .memory_mem_a                          ( HPS_DDR3_ADDR),                          //          memory.mem_a
         .memory_mem_ba                         ( HPS_DDR3_BA),                         //                .mem_ba
         .memory_mem_ck                         ( HPS_DDR3_CK_P),                         //                .mem_ck

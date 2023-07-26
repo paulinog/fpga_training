@@ -77,7 +77,8 @@ module soc_system (
 	hps_0_f2h_stm_hw_events_stm_hwevents,
 	hps_0_f2h_warm_reset_req_reset_n,
 	hps_0_f2h_debug_reset_req_reset_n,
-	hps_0_f2h_cold_reset_req_reset_n);	
+	hps_0_f2h_cold_reset_req_reset_n,
+	pio_led_external_connection_export);	
 
 	input		clk_clk;
 	input		reset_reset_n;
@@ -157,4 +158,5 @@ module soc_system (
 	input		hps_0_f2h_warm_reset_req_reset_n;
 	input		hps_0_f2h_debug_reset_req_reset_n;
 	input		hps_0_f2h_cold_reset_req_reset_n;
+	output	[9:0]	pio_led_external_connection_export;
 endmodule

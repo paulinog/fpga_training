@@ -10,13 +10,14 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="306" />
-   <clocksource preferredWidth="306" />
-   <frequency preferredWidth="287" />
+   <clockname preferredWidth="235" />
+   <clocksource preferredWidth="235" />
+   <frequency preferredWidth="220" />
   </columns>
  </clocktable>
- <window width="1600" height="832" x="-148" y="423" />
- <library expandedCategories="Library,Project" />
+ <window width="1936" height="1056" x="-223" y="373" />
+ <library
+   expandedCategories="Library/Processors and Peripherals/Peripherals,Library/Interface Protocols,Library/Interface Protocols/PCI Express/QSYS Example Designs,Library,Project,Library/Processors and Peripherals,Library/Interface Protocols/PCI Express" />
  <hdlexample language="VERILOG" />
  <generation block_symbol_file="0" />
 </preferences>
